@@ -1,0 +1,21 @@
+# Git Sync settings for the GitBook site.
+#
+# Everything here publishes as one space. The page order comes from SUMMARY.md
+# at the top of the repository, and each topic folder becomes a chapter. Keeping
+# a single space anchored at the repository root lets relative links between
+# pages, and every image path, resolve without rewriting.
+
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+version: 1
+
+site:
+  title: Precursor Docs
+  structure:
+    - type: space
+      key: space-docs
+      title: Precursor Docs
+      path: docs
+      default: true
+      content:
+        directory: .
+        language: en
